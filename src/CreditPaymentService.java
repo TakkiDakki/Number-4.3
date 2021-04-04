@@ -1,6 +1,12 @@
 public class CreditPaymentService {
-    public float calculate(int credit, int year) {
-        int payment = sum * (procent + (procent / ((1 + percent) * 12) - 1));
-        return payment;
+    public float calculate(int credit, int paymentyear, double creditpercent) {
+        int year;
+        paymentyear = year * 12;
+
+
+
+        long monthpayment = (long) ((long) credit * (creditpercent / (1 + creditpercent) - paymentyear - 1));
+        return monthpayment;
     }
-}
+
+      }
