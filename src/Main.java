@@ -5,12 +5,13 @@ public class Main {
         int credit = 1_000_000;
         double creditpercent = 9.99;
 
-        long monthpayment = (long) service.calculate(1_000_000, 12,  9.99);
-        System.out.println(monthpayment);
-        long monthpayment = (long) service.calculate(1_000_000, 24, 9.99);
-        System.out.println(monthpayment);
-        long monthpayment = (long) service.calculate(1_000_000, 36, 9.99);
-        System.out.println(monthpayment);
+
+        long monthpaymentoneyear = (long) service.calculate(1_000_000, 1,  9.99);
+        System.out.println(monthpaymentoneyear);
+        long monthpaymenttwoyear = (long) service.calculate(1_000_000, 2, 9.99);
+        System.out.println(monthpaymenttwoyear);
+        long monthpaymentthreeyear = (long) service.calculate(1_000_000, 3, 9.99);
+        System.out.println(monthpaymentthreeyear);
 
 
     }
